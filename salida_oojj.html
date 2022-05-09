@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario salida</title>
+    <link rel="shortcut icon" href="./imag/icononav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/formularios.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="nav-bg">
+        <nav class="contenedor navegacion-principal">
+			<label class="logo">
+				<a href=""
+				  ><img src="/imag/icononav.png" alt="" />Plataforma Ordenes</a>
+			  </label>
+          <a href="index.html">Inicio</a>
+          <a href="ingreso_oojj.html">Ingreso Orden</a>
+          <a href="salida_oojj.html">Salida Orden</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Formulario de Salida</h1>
+      <form>
+        <div class="field">
+          <label>Nro de Causa</label>
+          <input
+            name="causa"
+            type="number"
+            required
+            value=""
+            placeholder="(Solo numeros)"
+            autocomplete
+          />
+        </div>
+        <div class="field">
+          <label>Nro de Oficio Unidad</label>
+          <input name="Comuna" type="number" autocomplete />
+        </div>
+
+        <div class="field">
+          <label>Respuesta</label>
+          <select name="Delito" required>
+            <option selected disabled>Sel. una opción</option>
+            <option>Positiva</option>
+            <option>Negativa</option>
+          </select>
+        </div>
+
+        <div class="textBox">
+          <label>Observaciones</label>
+          <textarea></textarea>
+        </div>
+
+        <div class="submit">
+          <button class="guardar">Guardar</button>
+
+          <button class="cancelar">Cancelar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="contenedor-todofooter">
+        <dvi class="footer-body">
+          <div class="columna1">
+            <h1>Mas información</h1>
+            <p>
+              El Centro de Formación Técnica Estatal de La Araucanía es una
+              institución de Educación Superior Regional, creada por ley,
+              dirigida por el Rector y con un Cuerpo Colegiado Multisectorial
+              que participa de su gobierno, que contribuye a la formación de
+              personas para la sociedad del conocimiento y con un nivel de
+              especialización técnica en relación coherente con los
+              requerimientos productivos y competitivos de la región y del país
+            </p>
+          </div>
+
+          <div class="columna2">
+            <h1>Redes sociales</h1>
+            <div class="row">
+              <img src="/imag/facebook.svg" alt="" />
+              <label>Síguenos en facebook</label>
+            </div>
+            <div class="row">
+              <img src="/imag/instregram.svg" alt="" />
+              <label>Síguenos en Instegram</label>
+            </div>
+            <div class="row">
+              <img src="/imag/twiter.svg" alt="" />
+              <label>Síguenos en twitter</label>
+            </div>
+          </div>
+
+          <div class="columna3">
+            <h1>Informacion de contactos</h1>
+            <div class="row2">
+              <img src="/imag/casa.svg" />
+              <label
+                >Manuel A. Matta 1055, Lautaro. +56 9 5320 7825 Horario de
+                atención Lunes a Viernes de 09:00 a 14:00 hrs.</label
+              >
+            </div>
+          </div>
+        </dvi>
+        <div class="contenedor-footer">
+          <div class="copyright">
+            Todos los derechos reservados. Lab 203, TNS Analista Programador
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
