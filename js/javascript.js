@@ -111,6 +111,12 @@ function captura3(){
 
     }
 
+    if (usuariologin == "yonathan" && contraseñalogin == "1234"){
+
+        window.location="salida_oojj.html";
+
+    }
+
     if (usuariologin=="") {
         alert("El nombre de usuario es obligatorio");
         document.getElementById("usuariologin").focus();
