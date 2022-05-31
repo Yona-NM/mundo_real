@@ -27,7 +27,7 @@
     <main>
       <h1>Formulario de Salida</h1>
       <form>
-        <div class="field">
+        <div class="campo">
           <label>Nro de Causa</label>
           <input
             name="causa"
@@ -36,21 +36,27 @@
             value=""
             placeholder="(Solo numeros)"
             autocomplete
-          />
+            id="causasalida"
+             maxlength = "12" 
+             min = "1" 
+            />
+
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Nro de Oficio Unidad</label>
           <input
-            name="Comuna"
+            name="ofunidad"
             type="number"
             autocomplete
             placeholder="(Solo numeros)"
-          />
+            id="ofunidad"
+            />
+            
         </div>
 
-        <div class="field">
+        <div class="campo">
           <label>Respuesta</label>
-          <select name="Delito" required>
+          <select name="Delito" required id="respuesta">
             <option selected disabled>Sel. una opción</option>
             <option>Positiva</option>
             <option>Negativa</option>
@@ -62,8 +68,8 @@
           <textarea></textarea>
         </div>
 
-        <div class="submit">
-          <button class="guardar">Guardar</button>
+        <div class="boton">
+          <button type="button" onclick="captura2()" class="guardar">Guardar</button>
 
           <button class="cancelar">Cancelar</button>
         </div>
@@ -88,15 +94,15 @@
 
           <div class="columna2">
             <h1>Redes sociales</h1>
-            <div class="row">
+            <div class="fila">
               <img src="./imag/facebook.svg" alt="" />
               <label>Síguenos en facebook</label>
             </div>
-            <div class="row">
+            <div class="fila">
               <img src="./imag/instregram.svg" alt="" />
               <label>Síguenos en Instegram</label>
             </div>
-            <div class="row">
+            <div class="fila">
               <img src="./imag/twiter.svg" alt="" />
               <label>Síguenos en twitter</label>
             </div>
@@ -104,7 +110,7 @@
 
           <div class="columna3">
             <h1>Informacion de contactos</h1>
-            <div class="row2">
+            <div class="fila2">
               <img src="./imag/casa.svg" />
               <label
                 >Manuel A. Matta 1055, Lautaro. +56 9 5320 7825 Horario de
@@ -114,11 +120,12 @@
           </div>
         </dvi>
         <div class="contenedor-footer">
-          <div class="copyright">
+          <div class="derechosautor">
             Todos los derechos reservados. Lab 203, TNS Analista Programador
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/javascript.js"></script>
   </body>
 </html>

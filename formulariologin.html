@@ -7,33 +7,33 @@
   <link rel="stylesheet" href="./css/formularios.css">
   <link rel="stylesheet" href="./css/normalize.css">
   
-  <title>Login</title>
+  <title>Login ingreso a Ordenes</title>
 </head>
 <body>
-  <div class="login-container">
-    <div class="login-info-container">
-      <h1 class="title">Inicio de Usuario</h1>
-      <div class="social-login">
-        <div class="social-login-element">
-          <img src="./imag/google.svg" alt="google-image">
+  <div class="inicio-contenedor">
+    <div class="inicio-info-contenedor">
+      <h1 class="titulo">Inicio de Usuario</h1>
+      <div class="inicio-social">
+        <div class="elemento-inicio-social">
+          <img src="/imag/google.svg" alt="google-image">
           <span>Google</span>
         </div>
-        <div class="social-login-element">
-          <img src="./imag/facebook.svg" alt="facebook-image">
+        <div class="elemento-inicio-social" >
+          <img src="/imag/facebook.svg" alt="facebook-image">
           <span>Facebook</span>
         </div>
       </div>
       <p>Ingresa los datos solicitados</p>
-      <form class="inputs-container">
-        <input class="input" type="text" placeholder="Nombre">
-        <input class="input" type="text" placeholder="Contraseña">
+      <form class="entradas-contenedor">
+        <input class="entrada" type="text" placeholder="Nombre" id="usuariologin">
+        <input class="entrada" type="number" placeholder="Contraseña" id="contraseñalogin">
         <p>¿Olvido su contraseña? <span class="span">Click aqui</span></p>
-        <button class="btn" href="index.html">ENTRAR</button>
+        <button type="button" onclick="captura3()" class="entrar">Entrar</button>
         <p>¿No tienes una cuenta? <span class="span">Registrate</span></p>
       </form>
     </div>
-      <img class="image-container" src="./imag/login.svg" alt="">
+      <img class="imagen-contenedor" src="./imag/login.svg" alt="">
   </div>
-
+  <script src="js/javascript.js"></script>
 </body>
 </html>

@@ -27,7 +27,7 @@
     <main>
       <h1>Formulario de registro</h1>
       <form>
-        <div class="field">
+        <div class="campo">
           <label>Nro de Causa</label>
           <input
             name="causa"
@@ -35,47 +35,51 @@
             required
             value=""
             placeholder="(Solo  Numeros)"
-            autocomplete
+            autocomplete maxlength="5"
+            id="causaruc"
           />
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Comuna</label>
-          <input name="Comuna" type="text" autocomplete />
+          <input name="Comuna" type="text" autocomplete maxlength="15" id="comuna" />
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Tribunal</label>
-          <select name="Tribunal" required>
+          <select name="Tribunal" required id="tribunal">
             <option selected disabled>Sel. una opción</option>
             <option>Fiscalia Local</option>
             <option>Juz Garantia</option>
             <option>Juz Pol Local</option>
           </select>
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Nro Parte</label>
           <input
+            id="parte"
             name="Parte"
             type="number"
             required
             value=""
             placeholder="(Solo Numeros)"
             autocomplete
+            minlength="1"
+            maxlength="5"
           />
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Unidad Denuncia</label>
-          <input name="Denuncia" type="text" autocomplete />
+          <input name="Denuncia" type="text" autocomplete maxlength="20" id="udenuncia" />
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Delito</label>
-          <select name="Delito" required>
+          <select name="Delito" required  id="delito">
             <option selected disabled>Sel. una opción</option>
             <option>ROBO</option>
             <option>HURTO</option>
             <option>HALLAZGO</option>
           </select>
         </div>
-        <div class="field">
+        <div class="campo">
           <label> Funcionario Asignado</label>
           <input
             name="Funcionario"
@@ -84,29 +88,31 @@
             value=""
             placeholder="Nombre y apellido"
             autocomplete
+            maxlength="20"
+            id="funcionario"
           />
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Unidad Diligencia</label>
-          <input name="Unidad Diligencia" type="text" autocomplete />
+          <input name="Unidad Diligencia" type="text" autocomplete maxlength="20" id="udiligencia"/>
         </div>
-        <div class="field">
+        <div class="campo">
           <label>Tipo Orden</label>
-          <select name="Tribunal" required>
+          <select name="Tribunal" required id="torden">
             <option selected disabled>Sel. una opción</option>
             <option>Orden Investigar</option>
             <option>Instruccion Particular</option>
             <option>Inscripcion Judicial</option>
           </select>
         </div>
-        <div class="textBox">
+        <div class="textBox" id="texbox">
           <label>Observaciones</label>
           <textarea></textarea>
         </div>
 
-        <div class="submit">
-          <button class="guardar">Guardar</button>
-
+        <div class="boton">
+          <button type="button" onclick="captura()" class="guardar">Guardar</button>
+         
           <button class="cancelar">Cancelar</button>
         </div>
       </form>
@@ -129,15 +135,15 @@
 
           <div class="columna2">
             <h1>Redes sociales</h1>
-            <div class="row">
+            <div class="fila">
               <img src="./imag/facebook.svg" alt="" />
               <label>Síguenos en facebook</label>
             </div>
-            <div class="row">
+            <div class="fila">
               <img src="./imag/instregram.svg" alt="" />
               <label>Síguenos en Instegram</label>
             </div>
-            <div class="row">
+            <div class="fila">
               <img src="./imag/twiter.svg" alt="" />
               <label>Síguenos en twitter</label>
             </div>
@@ -145,7 +151,7 @@
 
           <div class="columna3">
             <h1>Informacion de contactos</h1>
-            <div class="row2">
+            <div class="fila2">
               <img src="./imag/casa.svg" />
               <label
                 >Manuel A. Matta 1055, Lautaro. +56 9 5320 7825 Horario de
@@ -155,11 +161,12 @@
           </div>
         </dvi>
         <div class="contenedor-footer">
-          <div class="copyright">
+          <div class="derechosautor">
             Todos los derechos reservados. Lab 203, TNS Analista Programador
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/javascript.js"></script>
   </body>
 </html>

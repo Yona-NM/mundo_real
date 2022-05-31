@@ -72,9 +72,11 @@ body {
 }
 
 .navegacion-principal a:hover {
-  background-color: #2091f9;
+  background-color: #6aaeed;
   transition: 0.5s;    
 }
+
+
 
 @media (min-width: 768px ) {
   .navegacion-principal  {
@@ -113,8 +115,8 @@ body {
   border-radius: 32px;
 }
 
-
-.about{
+/* Parte Sobre*/
+.sobre{
   text-align: center;
 }
 
@@ -125,13 +127,13 @@ body {
 
 }
 
-.about_paragraph{
+.sobre_parrafo{
   line-height: 1.7;
   
 }
 
 
-.about_main{
+.sobre_main{
   padding-top: 80px;
   display: grid;
   width: 90%;
@@ -142,7 +144,7 @@ body {
 
 }
 
-.about_icons{
+.sobre_icons{
   display: grid;
   gap: 1em;
   justify-items: center;
@@ -152,15 +154,15 @@ body {
 
 }
 
-.about_icon{
+.sobre_icon{
   width: 40px;
 
 }
 
 
-/*knowlech*/
+/* Parte conocimiento*/
 
-.knowledge{
+.conocimiento{
   background-color: #e5e5f7;
   background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
   background-size: 20px 20px;
@@ -168,7 +170,7 @@ body {
   overflow: hidden;
 }
 
-.knowledge_container{
+.conocimiento_container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
@@ -176,23 +178,24 @@ body {
   text-align: justify;
 }
 
-.knowledge_picture{
+.conocimiento_picture{
   max-width: 500px;
 
 }
 
-.knowledge_paragraph{
+.conocimiento_parrafo{
   line-height: 1.7;
   margin-bottom: 15px;
   
 }
 
-.knowledge_img{
+.conocimiento_img{
   width: 100%;
   display: block;
   
 }
 
+/* Parte footer*/
 
 footer{
   width: 100%;
@@ -237,17 +240,17 @@ footer{
   font-size: 22px;
 }
 
-.row{
+.fila{
   margin-top: 20px;
   display: flex;
 }
 
-.row img{
+.fila img{
   width: 36px;
   height: 36px;
 }
 
-.row label{
+.fila label{
   margin-top: 10px;
   margin-left: 10px;
   color: #fff;
@@ -263,16 +266,16 @@ footer{
   font-size: 22px;
 }
 
-.row2{
+.fila2{
   margin-top: 20px;
 }
 
-.row2 img{
+.fila2 img{
   width: 36px;
   height: 36px;
 }
 
-.row2 label{
+.fila2 label{
   margin-left: 20px;
   max-width: 140px;
   margin-top: 10px;
@@ -288,11 +291,13 @@ footer{
 
 }
 
-.copyright{
+/* Parte derechos de autor*/
+
+.derechosautor{
   color: #ffffff;
 }
 
-.copyright a{
+.derechosautor a{
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: bold;
