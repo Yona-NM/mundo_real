@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/formularios.css">
-  <link rel="stylesheet" href="./css/normalize.css">
-  
-  <title>Login ingreso a Ordenes</title>
-</head>
-<body>
-  <div class="inicio-contenedor">
-    <div class="inicio-info-contenedor">
-      <h1 class="titulo">Inicio de Usuario</h1>
-      <div class="inicio-social">
-        <div class="elemento-inicio-social">
-          <img src="/imag/google.svg" alt="google-image">
-          <span>Google</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/formularios.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="shortcut icon" href="./imag/icononav.png" type="image/x-icon" />
+
+    <title>Login ingreso a Ordenes</title>
+  </head>
+  <body>
+    <div class="inicio-contenedor">
+      <div class="inicio-info-contenedor">
+        <h1 class="titulo">Inicio Usuario</h1>
+        <div class="inicio-social">
+          <div class="elemento-inicio-social">
+            <a href="f_contacto.html"> <img src="./imag/hm.svg" /></a>
+            <span>Registro</span>
+          </div>
+          <div class="elemento-inicio-social">
+            <a href="index.html"> <img src="./imag/casa.svg" /></a>
+
+            <span>Inicio</span>
+          </div>
         </div>
-        <div class="elemento-inicio-social" >
-          <img src="/imag/facebook.svg" alt="facebook-image">
-          <span>Facebook</span>
-        </div>
+
+        <p>Ingresa los datos solicitados</p>
+        <form class="entradas-contenedor">
+          <input
+            class="entrada"
+            type="text"
+            placeholder="Nombre"
+            id="usuariologin"
+          />
+          <input
+            class="entrada"
+            type="number"
+            placeholder="Contraseña"
+            id="contraseñalogin"
+          />
+          <p>
+            ¿No tienes Cuenta? Registrate en icono de registro
+            <span class="span"></span>
+          </p>
+          <button type="button" onclick="captura3()" class="entrar">
+            Entrar
+          </button>
+        </form>
       </div>
-      <p>Ingresa los datos solicitados</p>
-      <form class="entradas-contenedor">
-        <input class="entrada" type="text" placeholder="Nombre" id="usuariologin">
-        <input class="entrada" type="number" placeholder="Contraseña" id="contraseñalogin">
-        <p>¿Olvido su contraseña? <span class="span">Click aqui</span></p>
-        <button type="button" onclick="captura3()" class="entrar">Entrar</button>
-        <p>¿No tienes una cuenta? <span class="span">Registrate</span></p>
-      </form>
+      <img class="imagen-contenedor" src="./imag/login.svg" alt="" />
     </div>
-      <img class="imagen-contenedor" src="./imag/login.svg" alt="">
-  </div>
-  <script src="js/javascript.js"></script>
-</body>
+    <script src="js/javascript.js"></script>
+  </body>
 </html>

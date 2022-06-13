@@ -12,52 +12,8 @@ body {
 	
 }
 
-.logo img{
-	width: 20px;
-	height: 20px;
-	
-  }
-
-.nav-bg{
-	background-color:none;
-  }
-  
-  .navegacion-principal  {
-	display: flex;
-	flex-direction: column;
-	
-  }
-  
-  .navegacion-principal a {
-	display: block;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
-	font-size: 1rem;
-	font-weight: bold; /* tambien puede ser 700 */
-	color: #fff(255, 255, 255);
-	border-radius: 20px;
-	padding: 9px 12px;
-	
-  }
-  
-  .navegacion-principal a:hover {
-	background-color:#6aaeed;
-	transition: 0.5s;    
-  }
-  
-  @media (min-width: 768px ) {
-	.navegacion-principal  {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	
-  }
-  
-
 main{
 	padding: 3.5rem 0;
-
 	background-color:rgb(203, 191, 191);
   background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imag/Principaloojj.jpg');
 }
@@ -65,18 +21,15 @@ main{
 h1{
 	font-size: 2rem;
 	font-weight: bold;
-
 	text-align: center;
-	text-transform: uppercase;
-
-	color: #040404;
+	color: #ffffff;
+ 
 }
 
 form{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
 	width: 100%;
 	max-width: 800px;
 	margin-top: 2.8rem;
@@ -87,26 +40,21 @@ form{
 .campo{
 	display: flex;
 	flex-direction: column;
-
 	width: 14rem;
 	margin: 0.5rem 0;
 }
 
 .campo label{
 	font-size: 0.9rem;
-
 	margin-bottom: 0.2rem;
-
-	color: #080808;
+	color: #000000;
 }
 
 .campo input{
 	font-size: 1.1rem;
-
 	height: 2.2rem;
 	padding-left: 0.5rem;
-
-	border: 2px solid #696969;
+	border: 2px solid #000000;
 	border-radius: 20px;
 }
 
@@ -164,37 +112,58 @@ textarea{
 
 .boton button.guardar{
   
-  background-color: #31b325;
+  background-color: #3ea835;
   justify-self: center;
   color:#fff;
   text-decoration: none;
   padding: 13px 30px;
   border-radius: 32px;
+  margin: 0 auto;
   
 }
 
 .boton button.cancelar{
   
-	background-color: #ec4e48;
+	background-color: #d41710;
 	justify-self: center;
 	color:#fff;
 	text-decoration: none;
 	padding: 13px 30px;
 	border-radius: 32px;
+  margin: 0 auto;
   
   }
 
+  
+
   .boton button.guardar:hover {
-    background-color: #467442;
+    background-color:  #034574;
     transition: 0.5s; 
   } 
   
   .boton button.cancelar:hover {
-    background-color: #7e3937;
+    background-color:  #034574;
     transition: 0.5s; 
   } 
 
- /*login de mi pagina */
+  @media only screen and (min-width:768px) and (max-width:980px)
+{
+    .formulario-orden{
+        margin:auto;
+        width:90%;
+        margin-top: 100px;
+        border-radius: 2%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        
+                
+    }
+    
+}
+
+ /*login de mi pagina y formulario registro*/
 
  
 
@@ -313,11 +282,7 @@ textarea{
     margin: 0;
 }
 
-.span {
-    color: var(--light-pink);
-    font-weight: 600;
-    cursor: pointer;
-}
+
 
 @media screen and (max-width: 1000px) {
     .inicio-contenedor {
@@ -365,116 +330,3 @@ textarea{
     }
 }
 
-footer{
-	width: 100%;
-	background-color: gray;
-	color: white;
-	padding-top: 40px;
-  }
-  
-  .contenedor-todofooter{
-	width: 100%;
-	max-width: 1200px;
-	margin: auto;
-  }
-  
-  .footer-body{
-	display: flex;
-	justify-content: space-between;
-  }
-  
-  .columna1{
-	max-width: 400px;
-  
-  }
-  
-  .columna1 h1{
-	font-size: 22px;
-  }
-  
-  .columna1 p{
-	font-size: 14px;
-	color: #fff;
-	margin-top: 20px;
-	text-align: justify;
-  }
-  
-  .columna2{
-	max-width: 400px;
-  
-  }
-  
-  .columna2 h1{
-	font-size: 22px;
-  }
-  
-  .fila{
-	margin-top: 20px;
-	display: flex;
-  }
-  
-  .fila img{
-	width: 36px;
-	height: 36px;
-  }
-  
-  .fila label{
-	margin-top: 10px;
-	margin-left: 10px;
-	color: #fff;
-  
-  }
-  
-  .columna3{
-	max-width: 400px;
-  
-  }
-  
-  .columna3 h1{
-	font-size: 22px;
-  }
-  
-  .fila2{
-	margin-top: 20px;
-  }
-  
-  .fila2 img{
-	width: 36px;
-	height: 36px;
-  }
-  
-  .fila2 label{
-	margin-left: 20px;
-	max-width: 140px;
-	margin-top: 10px;
-  }
-  
-  .contenedor-footer{
-	max-width: 1200px;
-	margin: auto;
-	background: gray (0, 0, 0);
-	text-align: center;
-	justify-content: space-between;
-	padding: 40px;
-  
-  }
-  
-  .derechosautor{
-	color: #ffffff;
-  }
-  
-  .derechosautor a{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-	font-weight: bold;
-  }
-  
-  @media screen and (max-width:715px) {
-  
-	.footer-body{
-	  flex-wrap:wrap;
-	}
-  
-  
-	
-  }

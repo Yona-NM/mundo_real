@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/formularios.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="shortcut icon" href="./imag/icononav.png" type="image/x-icon" />
+  
+  <title>Formulario Registro</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <a href="#" class="logo nav-link">ordenes</a>
+          <button class="nav-boton" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="formulariologin.html" class="nav-menu-link nav-link">Ingreso de Ordenes </a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="formulariologin.html" class="nav-menu-link nav-link">Salida de Ordenes</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="f_contacto.html" class="nav-menu-link nav-link nav-menu-link_active"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <title>Fomulario Registro</title>
+</head>
+<body>
+  <div class="inicio-contenedor">
+    <div class="inicio-info-contenedor">
+      <h1 class="titulo">Formulario Registro</h1>
+      <div class="inicio-social">
+        <div class="elemento-inicio-social">
+            <a href="formulariologin.html">
+                <img src="./imag/usuario.svg" ></a> 
+            <span>login</span>
+          </div>
+          <div class="elemento-inicio-social" >
+            <a href="index.html">
+                <img src="./imag/casa.svg" ></a>
+            <span>Inicio</span>
+          </div>
+      </div>
+       
+      <p>Formulario de registro</p>
+      <form class="entradas-contenedor">
+        <input class="entrada" type="text" placeholder="Nombre" id="usuario">
+        <input class="entrada" type="text" placeholder="Apellido Paterno" id="Apaterno">
+        <input class="entrada" type="text" placeholder="Apellido Materno" id="Amaterno">
+        <input class="entrada" type="email" placeholder="email" id="email">
+        <p>¿Ya tienes Cuenta?, ingresa en icono login e ingresa a plataforma <span class="span"></span></p>
+        <button type="button" onclick="captura3()" class="entrar">Registrar</button>
+        
+      </form>
+    </div>
+      <img class="imagen-contenedor" src="./imag/personas.jpg" alt="">
+  </div>
+  <footer>
+    <div class="contenedor-todofooter">
+      <div class="footer-body">
+        <div class="columna1">
+          <h1>Mas información</h1>
+          <p>
+            El Centro de Formación Técnica Estatal de La Araucanía es una
+            institución de Educación Superior Regional, creada por ley,
+            dirigida por el Rector y con un Cuerpo Colegiado Multisectorial
+            que participa de su gobierno, que contribuye a la formación de
+            personas para la sociedad del conocimiento y con un nivel de
+            especialización técnica en relación coherente con los
+            requerimientos productivos y competitivos de la región y del país
+          </p>
+        </div>
+
+        <div class="columna2">
+          <h1>Redes sociales</h1>
+          <div class="fila">
+            <a href="https://es-la.facebook.com/">
+                
+            <img src="./imag/facebook.svg" alt=""></a>
+            <label>Síguenos en facebook</label>
+          </div>
+
+          <div class="fila">
+            <a href="https://www.instagram.com/">
+            <img src="./imag/instregram.svg" alt=""></a>
+            <label>Síguenos en Instegram</label>
+          </div>
+          <div class="fila">
+            <a href="https://twitter.com/">
+            <img src="./imag/twiter.svg" alt=""></a>
+            <label>Síguenos en twitter</label>
+          </div>
+        </div>
+
+        <div class="columna3">
+          <h1>Informacion de contactos</h1>
+          <div class="fila2">
+            <a href="http://www.cftaraucania.cl/">
+            <img src="./imag/casa.svg" ></a>
+            <label
+              >Instalaciones Manuel A. Matta 1055, Comuna Lautaro. </label
+            >
+          </div>
+          <div class="fila2">
+            <a href=""></a>
+            <img src="./imag/fono.svg" />
+            <label
+              >Fono +56 9 5320 7825</label
+            >
+          </div>
+          <div class="fila2">
+            <a href=""></a>
+            <img src="./imag/usuario.svg" />
+            <label
+              >Horario de
+              atención Lunes a Viernes de 09:00 a 14:00 hrs</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="contenedor-footer">
+        <div class="derechosautor">
+          Todos los derechos reservados. Lab 203, TNS Analista Programador
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/javascript.js"></script>
+</body>
+</html>

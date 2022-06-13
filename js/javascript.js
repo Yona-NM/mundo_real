@@ -111,12 +111,7 @@ function captura3(){
 
     }
 
-    if (usuariologin == "yonathan" && contraseñalogin == "1234"){
-
-        window.location="salida_oojj.html";
-
-    }
-
+    
     if (usuariologin=="") {
         alert("El nombre de usuario es obligatorio");
         document.getElementById("usuariologin").focus();
@@ -130,3 +125,20 @@ function captura3(){
     }
 }
 }
+
+
+
+
+const navboton = document.querySelector(".nav-boton");
+const navMenu = document.querySelector(".nav-menu");
+
+navboton.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
+
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navboton.setAttribute("aria-label", "Cerrar menú");
+  } else {
+    navboton.setAttribute("aria-label", "Abrir menú");
+  }
+});
+

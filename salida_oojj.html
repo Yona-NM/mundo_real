@@ -8,25 +8,55 @@
     <link rel="shortcut icon" href="./imag/icononav.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="nav-bg">
-        <nav class="contenedor navegacion-principal">
-          <label class="logo">
-            <a href=""
-              ><img src="./imag/icononav.png" alt="" />Plataforma Ordenes</a
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link">ordenes</a>
+        <button class="nav-boton" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="ingreso_oojj.html" class="nav-menu-link nav-link"
+              >Ingreso de Ordenes
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="salida_oojj.html" class="nav-menu-link nav-link"
+              >Salida de Ordenes</a
             >
-          </label>
-          <a href="index.html">Inicio</a>
-          <a href="ingreso_oojj.html">Ingreso Orden</a>
-          <a href="salida_oojj.html">Salida Orden</a>
-        </nav>
-      </div>
+          </li>
+          <li class="nav-menu-item">
+            <a
+              href="f_contacto.html"
+              class="nav-menu-link nav-link nav-menu-link_active"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1>Formulario de Salida</h1>
       <form>
+        <div class="campo">
+          <label>Fecha Salida</label>
+          <input
+            name="fecha"
+            type="date"
+            required
+            value=""
+            placeholder="(Solo  Numeros)"
+            autocomplete
+            maxlength="5"
+            id="fechaSalida"
+          />
+        </div>
         <div class="campo">
           <label>Nro de Causa</label>
           <input
@@ -37,10 +67,9 @@
             placeholder="(Solo numeros)"
             autocomplete
             id="causasalida"
-             maxlength = "12" 
-             min = "1" 
-            />
-
+            maxlength="12"
+            min="1"
+          />
         </div>
         <div class="campo">
           <label>Nro de Oficio Unidad</label>
@@ -50,13 +79,12 @@
             autocomplete
             placeholder="(Solo numeros)"
             id="ofunidad"
-            />
-            
+          />
         </div>
 
         <div class="campo">
           <label>Respuesta</label>
-          <select name="Delito" required id="respuesta">
+          <select name="Delito" id="respuesta">
             <option selected disabled>Sel. una opción</option>
             <option>Positiva</option>
             <option>Negativa</option>
@@ -69,16 +97,25 @@
         </div>
 
         <div class="boton">
-          <button type="button" onclick="captura2()" class="guardar">Guardar</button>
+          <button type="button" onclick="captura2()" class="guardar">
+            Guardar
+          </button>
 
-          <button class="cancelar">Cancelar</button>
+          <button
+            type="reset"
+            name="cancelar"
+            value="cancelar"
+            class="cancelar"
+          >
+            Cancelar
+          </button>
         </div>
       </form>
     </main>
 
     <footer>
       <div class="contenedor-todofooter">
-        <dvi class="footer-body">
+        <div class="footer-body">
           <div class="columna1">
             <h1>Mas información</h1>
             <p>
@@ -95,15 +132,22 @@
           <div class="columna2">
             <h1>Redes sociales</h1>
             <div class="fila">
-              <img src="./imag/facebook.svg" alt="" />
+              <a href="https://es-la.facebook.com/">
+                <img src="./imag/facebook.svg" alt=""
+              /></a>
               <label>Síguenos en facebook</label>
             </div>
+
             <div class="fila">
-              <img src="./imag/instregram.svg" alt="" />
+              <a href="https://www.instagram.com/">
+                <img src="./imag/instregram.svg" alt=""
+              /></a>
               <label>Síguenos en Instegram</label>
             </div>
             <div class="fila">
-              <img src="./imag/twiter.svg" alt="" />
+              <a href="https://twitter.com/">
+                <img src="./imag/twiter.svg" alt=""
+              /></a>
               <label>Síguenos en twitter</label>
             </div>
           </div>
@@ -111,14 +155,26 @@
           <div class="columna3">
             <h1>Informacion de contactos</h1>
             <div class="fila2">
+              <a href=""></a>
               <img src="./imag/casa.svg" />
               <label
-                >Manuel A. Matta 1055, Lautaro. +56 9 5320 7825 Horario de
-                atención Lunes a Viernes de 09:00 a 14:00 hrs.</label
+                >Instalaciones Manuel A. Matta 1055, Comuna Lautaro.
+              </label>
+            </div>
+            <div class="fila2">
+              <a href=""></a>
+              <img src="./imag/fono.svg" />
+              <label>Fono +56 9 5320 7825</label>
+            </div>
+            <div class="fila2">
+              <a href=""></a>
+              <img src="./imag/usuario.svg" />
+              <label
+                >Horario de atención Lunes a Viernes de 09:00 a 14:00 hrs</label
               >
             </div>
           </div>
-        </dvi>
+        </div>
         <div class="contenedor-footer">
           <div class="derechosautor">
             Todos los derechos reservados. Lab 203, TNS Analista Programador
@@ -127,5 +183,9 @@
       </div>
     </footer>
     <script src="js/javascript.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

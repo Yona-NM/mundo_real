@@ -10,107 +10,122 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="nav-bg">
-        <nav class="contenedor navegacion-principal">
-          
-            <label class="logo">
-            <a href=""
-              ><img src="./imag/icononav.png" alt="" />Plataforma Ordenes</a>
-             
-          </label>
-          <a href="index.html">Inicio</a>
-          <a href="formulariologin.html">Ingreso Orden</a>
-          <a href="formulariologin.html">Salida Orden</a>
-          
-        </nav>
-      </div>
-
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link">ordenes</a>
+        <button class="nav-boton" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="formulariologin.html" class="nav-menu-link nav-link"
+              >Ingreso de Ordenes
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="formulariologin.html" class="nav-menu-link nav-link"
+              >Salida de Ordenes</a
+            >
+          </li>
+          <li class="nav-menu-item">
+            <a
+              href="f_contacto.html"
+              class="nav-menu-link nav-link nav-menu-link_active"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero">
       <section class="hero_container container">
         <h1 class="hero_titulo2">Plataforma de Ordenes Judiciales</h1>
         <p class="hero_parrafo1">
-          Plataforma sin fines de lucros que busca facilitar el ingreso y salida
+          Plataforma sin fines de lucro que busca facilitar el ingreso y salida
           de órdenes judiciales llegadas por diferentes tribunales al correo
           electrónico de su unidad.
         </p>
-        <a href="#" class="cta">Ver Tutorial</a>
-      </section>
-    </header>
-
-    <main>
-      <section class="container sobre">
-        <h2 class="subtitle">¿Quienes somos?</h2>
-        <p class="sobre_paragraph">
-          Somos alumnos de III semestre de analista programador del centro de
-          formación técnica de la Araucanía, quienes mediante un proyecto
-          semestral realizan un proyecto funcional con FRONT, JAVASCRIPT,
-          BACKEND JAVA .
-        </p>
-
-        <div class="sobre_main">
-          <article class="sobre_icons">
-            <img src="./imag/visual.svg" class="sobre_icon" />
-            <h3 class="sobre_title">FRONT(html,css)</h3>
-            <p class="sobre_parrafo">
-              El Front end es la parte de una web que conecta e interactúa con
-              los usuarios que la visitan. Es la parte visible, la que muestra
-              el diseño y los contenidos.
-            </p>
-          </article>
-
-          <article class="sobre_icons">
-            <img src="./imag/javascript.svg" class="sobre_icon" />
-            <h3 class="sobre_title">JAVA SCRIPT</h3>
-            <p class="sobre_parrafo">
-              JavaScript es un lenguaje de programación o de secuencias de
-              comandos que te permite implementar funciones complejas en páginas
-              web.
-            </p>
-          </article>
-
-          <article class="sobre_icons">
-            <img src="./imag/servidor.svg" class="sobre_icon" />
-            <h3 class="sobre_title">BACKEND</h3>
-            <p class="sobre_parrafo">
-              El desarrollo backend alude a aquella parte de la programación que
-              no es visible para el usuario. Esta parte no se ejecuta en el
-              navegador o dispositivo del cliente, sino en un servidor (físico o
-              en la nube)
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="conocimiento">
-        <div class="conocimiento_container container">
-          <div class="conocimiento_texto">
-            <h2 class="subtitle">creador de la pagina</h2>
-            <p class="conocimiento_parrafo">
-              Alumno TNS Analista programador Yonathan Nahuel Millan: Empezaron
-              mis clases en el CFT, y mi tiempo de disponibilidad se vio
-              reducido enormemente, igual me mantenía optimista y siguiendo mis
-              rutinas de avance, sin embargo cada vez que quería recabar
-              información, ya sea de otras páginas web, vídeos o libros tenía
-              que leer una gran cantidad de textos (de distintas fuentes) y me
-              demoraba muuuuuucho tiempo, solo para dar una idea, podía trabajar
-              en solo un artículo toda una semana y aun así no podía acabarlo,
-              pero este año siento que mi aprendizaje está un poco mas ordenado
-              en cuanto estructura de un pagina web y lo mas importante hacerla
-              responsiva que es algo que ignoraba hasta este semestre, gracias a
-              ello llego mi idea y espero me pueda brindar de ayuda en mi
-              trabajo."
-            </p>
-            <a href="#" class="cta">Ingresa a perfil</a>
-          </div>
-          <figure class="conocimiento_picture">
-            <img src="./imag/supremocreador2.jpeg" class="conocimiento_img" />
-          </figure>
-        </div>
+        <a href="https://www.youtube.com/watch?v=sVfyXQnf2Yk" class="cta"
+          >Ver Tutorial</a
+        >
       </section>
     </main>
+
+    <section class="container sobre">
+      <h2 class="subtitle">¿Quienes somos?</h2>
+      <p class="sobre_paragraph">
+        Somos alumnos de III semestre de la carrera "Analista Programador" del
+        centro de formación técnica de la Araucanía, quienes mediante un
+        proyecto semestral realizan un proyecto funcional con FRONT, JAVASCRIPT,
+        BACKEND JAVA .
+      </p>
+
+      <div class="sobre_main">
+        <article class="sobre_icons">
+          <img src="./imag/visual.svg" class="sobre_icon" />
+          <h3 class="sobre_title">FRONT(html,css)</h3>
+          <p class="sobre_parrafo">
+            El Front end es la parte de una web que conecta e interactúa con los
+            usuarios que la visitan. Es la parte visible, la que muestra el
+            diseño y los contenidos.
+          </p>
+        </article>
+
+        <article class="sobre_icons">
+          <img src="./imag/javascript.svg" class="sobre_icon" />
+          <h3 class="sobre_title">JAVA SCRIPT</h3>
+          <p class="sobre_parrafo">
+            JavaScript es un lenguaje de programación o de secuencias de
+            comandos que te permite implementar funciones complejas en páginas
+            web.
+          </p>
+        </article>
+
+        <article class="sobre_icons">
+          <img src="./imag/servidor.svg" class="sobre_icon" />
+          <h3 class="sobre_title">BACKEND</h3>
+          <p class="sobre_parrafo">
+            El desarrollo backend alude a aquella parte de la programación que
+            no es visible para el usuario. Esta parte no se ejecuta en el
+            navegador o dispositivo del cliente, sino en un servidor (físico o
+            en la nube)
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="conocimiento">
+      <div class="conocimiento_container container">
+        <div class="conocimiento_texto">
+          <h2 class="subtitle">creador de la pagina</h2>
+          <p class="conocimiento_parrafo">
+            Alumno TNS Analista programador Yonathan Nahuel Millan: Empezaron
+            mis clases en el CFT, y mi tiempo de disponibilidad se vio reducido
+            enormemente, igual me mantenía optimista y siguiendo mis rutinas de
+            avance, sin embargo cada vez que quería recabar información, ya sea
+            de otras páginas web, vídeos o libros tenía que leer una gran
+            cantidad de textos (de distintas fuentes) y me demoraba muuuuuucho
+            tiempo, solo para dar una idea, podía trabajar en solo un artículo
+            toda una semana y aun así no podía acabarlo, pero este año siento
+            que mi aprendizaje está un poco mas ordenado en cuanto estructura de
+            un pagina web y lo mas importante hacerla responsiva que es algo que
+            ignoraba hasta este semestre, gracias a ello llego mi idea y espero
+            me pueda brindar de ayuda en mi trabajo."
+          </p>
+          <a href="#" class="cta">Ingresa a perfil</a>
+        </div>
+        <figure class="conocimiento_picture">
+          <img src="./imag/supremocreador2.jpeg" class="conocimiento_img" />
+        </figure>
+      </div>
+    </section>
+
     <footer>
       <div class="contenedor-todofooter">
-        <dvi class="footer-body">
+        <div class="footer-body">
           <div class="columna1">
             <h1>Mas información</h1>
             <p>
@@ -126,31 +141,51 @@
 
           <div class="columna2">
             <h1>Redes sociales</h1>
-            <div class="row">
-              <img src="./imag/facebook.svg" alt="" />
+            <div class="fila">
+              <a href="https://es-la.facebook.com/">
+                <img src="./imag/facebook.svg" alt=""
+              /></a>
               <label>Síguenos en facebook</label>
             </div>
-            <div class="row">
-              <img src="./imag/instregram.svg" alt="" />
+
+            <div class="fila">
+              <a href="https://www.instagram.com/">
+                <img src="./imag/instregram.svg" alt=""
+              /></a>
               <label>Síguenos en Instegram</label>
             </div>
-            <div class="row">
-              <img src="./imag/twiter.svg" alt="" />
+            <div class="fila">
+              <a href="https://twitter.com/">
+                <img src="./imag/twiter.svg" alt=""
+              /></a>
               <label>Síguenos en twitter</label>
             </div>
           </div>
 
           <div class="columna3">
             <h1>Informacion de contactos</h1>
-            <div class="row2">
-              <img src="./imag/casa.svg" />
+            <div class="fila2">
+              <a href="http://www.cftaraucania.cl/">
+                <img src="./imag/casa.svg"
+              /></a>
               <label
-                >Manuel A. Matta 1055, Lautaro. +56 9 5320 7825 Horario de
-                atención Lunes a Viernes de 09:00 a 14:00 hrs.</label
+                >Instalaciones Manuel A. Matta 1055, Comuna Lautaro.
+              </label>
+            </div>
+            <div class="fila2">
+              <a href=""></a>
+              <img src="./imag/fono.svg" />
+              <label>Fono +56 9 5320 7825</label>
+            </div>
+            <div class="fila2">
+              <a href=""></a>
+              <img src="./imag/usuario.svg" />
+              <label
+                >Horario de atención Lunes a Viernes de 09:00 a 14:00 hrs</label
               >
             </div>
           </div>
-        </dvi>
+        </div>
         <div class="contenedor-footer">
           <div class="derechosautor">
             Todos los derechos reservados. Lab 203, TNS Analista Programador
@@ -158,6 +193,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/javascript.js"></script>
   </body>
 </html>
